@@ -1,1 +1,1 @@
-export {MyElement} from './app/components/my-element'
+export {MyElement} from './app/components/my-element/my-element'

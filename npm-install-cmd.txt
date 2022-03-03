@@ -1,0 +1,4 @@
+npm install lit 
+
+npm install -D css-loader extract-loader html-webpack-plugin lit-scss-loader node-sass sass-loader style-loader ts-loader tslib 
+typescript webpack webpack-cli webpack-dev-server

@@ -1,12 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const PACKAGE = require('../package.json');
+const version = PACKAGE.version.split('.').splice(0, 2).join('.');
 
 module.exports = {
   mode: 'development',
   entry: './src/index.ts',
   devtool: 'inline-source-map',
   output: {
-    filename: 'mfe.js',
+    filename: `${PACKAGE.name}.${version}.js`,
     path: path.resolve(__dirname, '../dist'),
   },
   module: {

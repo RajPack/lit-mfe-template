@@ -1,11 +1,11 @@
 {
   "name": "mfe-template",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "mfe template",
   "private": true,
   "scripts": {
     "start": "npx webpack serve  --config ./webpack/webpack.config.js",
-    "build": "npx webpack --config ./webpack/webpack.config.js",
+    "build": "rimraf dist && npx webpack --config ./webpack/webpack.config.js",
     "test": "npx jest"
   },
   "author": "",
@@ -26,6 +26,7 @@
     "jest-scss-transform": "^1.0.1",
     "lit-scss-loader": "^1.1.0",
     "node-sass": "^7.0.1",
+    "rimraf": "^3.0.2",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "ts-jest": "^27.1.3",

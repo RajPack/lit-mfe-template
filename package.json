@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@vaadin/router": "^1.7.4",
+    "bootstrap": "^5.3.3",
     "lit": "^2.2.4"
   },
   "devDependencies": {
@@ -21,11 +22,10 @@
     "@types/jest": "^27.5.1",
     "babel-jest": "^27.5.1",
     "css-loader": "^6.7.1",
-    "extract-loader": "^5.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "jest-scss-transform": "^1.0.2",
-    "lit-scss-loader": "^1.1.0",
+    "lit-css-loader": "^3.0.0",
     "node-sass": "^7.0.1",
     "rimraf": "^3.0.2",
     "sass-loader": "^12.6.0",

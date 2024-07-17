@@ -1,8 +1,9 @@
-@import '~bootstrap/scss/bootstrap';
+// @import "~bootstrap/scss/maps";
+@use '~bootstrap/scss/bootstrap' as variables;
 
 .container {
     margin: auto;
     width: 1000px;
-    background-color: $gray-100;
+    background-color: variables.$gray-100;
     // background-color: yellow;
 }

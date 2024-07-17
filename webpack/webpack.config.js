@@ -20,7 +20,16 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["lit-css-loader", "sass-loader"],
+        use: [
+          "lit-css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              // Prefer `dart-sass`
+              implementation: require("sass"),
+            },
+          },
+        ],
       },
     ],
   },
